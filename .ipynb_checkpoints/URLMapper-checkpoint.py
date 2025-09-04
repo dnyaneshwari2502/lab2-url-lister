@@ -2,7 +2,9 @@
 import sys
 import re
 
-url_pattern = re.compile(r'https?://[^\s,")]+')
+url_pattern = re.compile(
+    r'(https?://[^\s"\'<>#{}()]+|/wiki/[^\s"\'<>#{}()]+|mw-data:[^\s"\'<>#{}()]+)'
+)
 
 for line in sys.stdin:
     urls = url_pattern.findall(line)
