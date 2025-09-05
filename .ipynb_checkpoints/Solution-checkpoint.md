@@ -34,6 +34,9 @@ I changed the cluster configuration to 1 Master and 4 Worker nodes and then impl
 
 ![Screen capture of test output](./OutputScreenshot/13.png)
 
-![Screen capture of test output](./OutputScreenshot/14.png)
 
 After scaling the worker nodes from 2 workers to 4 workers, I observed that the execution time for 2 nodes (98.27s) is greater than the execution time for 4 nodes (77.15s). This tells us that adding more workers reduced the runtime by approximately 21 seconds. I also observed that the CPU time spent (2 nodes- 17910ms, 4 nodes- 16750ms) and the Memory usage for 4 nodes configuration is slightly less than for the 2 nodes configuration. This basically helped me understand that if we add more worker nodes, it will help in improving performance through parallel processing.
+
+
+
+Author: Dnyaneshwari Rakshe
